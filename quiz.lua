@@ -91,7 +91,7 @@ function Quiz:draw()
 				love.graphics.setColor( wrongAnswerCol )
 				love.graphics.printf( "Leider falsch! Richtig wäre gewesen:\n" ..
 				self.questions[self.curQuestion].a1,
-				20, love.graphics.getHeight() - 100, love.graphics.getWidth()-40, "center" )
+				20, love.graphics.getHeight() - 160, love.graphics.getWidth()-40, "center" )
 			end
 		else
 			love.graphics.setColor( correctAnswerCol )
@@ -122,7 +122,7 @@ function Quiz:nextQuestion()
 	Button:clear()
 	if self.curQuestion <= #self.questions then
 		local w2 = love.graphics.getWidth()/2
-		local h = love.graphics.getHeight() - 400
+		local h = love.graphics.getHeight() - 460
 		local id
 
 		local positions = {
