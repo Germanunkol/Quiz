@@ -36,7 +36,7 @@ function Button:draw()
 	if self.active then
 		love.graphics.rectangle( "line", self.x, self.y, self.w, self.h )
 	end
-	love.graphics.printf( self.label, self.x + 5, self.y + self.hOffset, self.w - 10, "center" )
+	love.graphics.printf( self.label, self.x + 10, self.y + self.hOffset, self.w - 20, "center" )
 end
 
 function Button:setColour( col )
